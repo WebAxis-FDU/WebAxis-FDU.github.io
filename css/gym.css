@@ -7,7 +7,7 @@
 .gym-page .scope-action:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 
 /* Introduction and evaluation modes. */
-.gym-intro { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-start; gap: 28px; min-height: min(960px, calc(100svh - 56px)); padding: clamp(32px, 5svh, 56px) 0 40px; }
+.gym-intro { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-start; gap: clamp(48px, 6vw, 80px); min-height: min(960px, calc(100svh - 56px)); padding: clamp(32px, 5svh, 56px) 0 40px; }
 .gym-intro .hero { position: static; padding: 0; }
 .gym-rationale { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; max-width: 1040px; margin: 32px auto 0; text-align: left; }
 .gym-rationale h2 { margin: 0 0 8px; font-size: 1.15rem; font-weight: 750; line-height: 1.4; letter-spacing: 0; color: var(--accent-strong); }
@@ -95,7 +95,7 @@
   .gym-evidence-path { max-width: 480px; width: 100%; margin-inline: auto; }
 }
 @media (min-width: 1000px) and (max-height: 800px) {
-  .gym-intro { gap: 16px; padding-block: 24px; }
+  .gym-intro { padding-block: 24px; }
   .gym-intro h1 { margin-bottom: 12px; font-size: 2.5rem; }
   .gym-intro .hero-lead { font-size: 1.1rem; line-height: 1.6; }
   .gym-rationale { margin-top: 24px; }
@@ -107,7 +107,7 @@
   .gym-intro .scope-action, .gym-intro .gym-mode-note { grid-area: 3 / 1 / auto / span 2; align-self: end; margin-top: 14px; }
 }
 @media (max-width: 700px) {
-  .gym-intro { min-height: auto; gap: 28px; padding: 36px 0 44px; }
+  .gym-intro { min-height: auto; padding: 36px 0 44px; }
   .gym-intro .scope-heading { margin-bottom: 20px; }
   .gym-intro .scope-heading h2 { font-size: 1.6rem; }
   .gym-intro .scope-heading .section-intro { font-size: .9rem; }
