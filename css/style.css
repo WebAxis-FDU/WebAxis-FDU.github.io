@@ -3034,12 +3034,15 @@ main { flex: 1 0 auto; }
   max-width: 860px;
 }
 .portal-lead {
-  max-width: 720px;
-  margin: 0 auto 16px;
+  max-width: 840px;
+  margin: 0 auto;
   font-size: 1.05rem;
-  line-height: 1.65;
+  line-height: 1.75;
   color: var(--ink-soft);
+  text-align: left;
+  text-wrap: pretty;
 }
+.portal-lead + .portal-lead { margin-top: 18px; }
 .portal-actions {
   display: flex;
   flex-wrap: wrap;
@@ -3731,7 +3734,7 @@ main { flex: 1 0 auto; }
 }
 .platform-card-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 12px;
 }
@@ -3769,32 +3772,6 @@ main { flex: 1 0 auto; }
   color: var(--ink-soft);
   font-size: 0.76rem;
   line-height: 1.4;
-}
-.platform-status {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 5px 9px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--paper);
-  color: var(--ink-soft);
-  font-size: 0.68rem;
-  line-height: 1.3;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.platform-status-ready {
-  border-color: color-mix(in srgb, var(--accent-strong) 15%, transparent);
-  background: var(--accent-soft);
-  color: var(--accent-strong);
-}
-.platform-status-ready i {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: currentColor;
 }
 .platform-description {
   margin: 24px 0;
@@ -3853,7 +3830,6 @@ main { flex: 1 0 auto; }
   .platform-icon svg { width: 26px; height: 26px; }
   .platform-card .platform-name { font-size: 1.4rem; }
   .platform-kind { font-size: 0.7rem; }
-  .platform-status { font-size: 0.63rem; padding: 5px 7px; }
   .platform-description { margin: 20px 0; font-size: 0.93rem; }
 }
 @media (prefers-reduced-motion: reduce) {

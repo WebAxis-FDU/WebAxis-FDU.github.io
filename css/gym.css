@@ -146,5 +146,6 @@
 .gym-baseline-links a { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-strong); font-size: .86rem; font-weight: 650; }
 .gym-baseline-links a:hover { text-decoration: underline; }
 
-.gym-mode-note { margin: 22px 0 0; color: var(--card-accent); font-size: .92rem; font-weight: 700; line-height: 1.7; }
+.gym-mode-note { margin: 22px 0 0; color: var(--card-accent); font-size: .92rem; font-weight: 700; }
+.gym-mode-note svg { flex-shrink: 0; }
 .gym-page article[id] { scroll-margin-top: 96px; }
