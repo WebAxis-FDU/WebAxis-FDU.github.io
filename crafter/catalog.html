@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WebCrafter Open-Source Applications: explore the distribution and runtime information of 2,920 full-stack web applications." />
+    <title>Open-Source Applications · WebCrafter</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="alternate icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalog">Skip to application catalog</a>
+
+    <header class="topbar page-width">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>WebAxis</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="./index.html">Overview</a>
+
+        <a class="nav-link active" href="./index.html">WebCrafter</a>
+
+        <!-- WebGym Nav Link -->
+        <span class="nav-link nav-link-disabled" aria-disabled="true">
+          <span>WebGym</span>
+          <small class="nav-soon-badge">Coming Soon</small>
+        </span>
+
+        <a class="nav-link" href="../about.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section catalog-section section-slate catalog-page" id="catalog">
+        <div class="page-width">
+          <div class="catalog-section-heading">
+            <div>
+              <p class="kicker">EXPLORE</p>
+              <h1>Browse Applications</h1>
+            </div>
+          </div>
+
+          <div class="catalog-toolbar">
+          <label class="search-box" for="search-input">
+            <svg class="search-icon" width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"></circle><line x1="15" y1="15" x2="11.5" y2="11.5"></line></svg>
+            <input id="search-input" type="search" placeholder="Search applications or repositories" aria-label="Search applications or repositories" autocomplete="off" />
+            <kbd class="search-kbd" id="search-kbd">⌘K</kbd>
+          </label>
+          <div class="toolbar-actions" aria-label="Catalog filters and sorting">
+            <details class="toolbar-menu" id="menu-language" name="catalog-filter">
+              <summary><span>Language</span> <span class="toolbar-menu-value" id="language-filter-summary">All</span></summary>
+              <div class="toolbar-menu-panel toolbar-menu-panel-wide">
+                <div class="filter-group">
+                  <p>Programming language</p>
+                  <div class="filter-options-grid">
+                    <label><input type="checkbox" value="PHP" data-filter="language" /> PHP <small class="filter-tag-count">1554</small></label>
+                    <label><input type="checkbox" value="Java" data-filter="language" /> Java <small class="filter-tag-count">1287</small></label>
+                    <label><input type="checkbox" value="JavaScript" data-filter="language" /> JavaScript <small class="filter-tag-count">20</small></label>
+                    <label><input type="checkbox" value="Python" data-filter="language" /> Python <small class="filter-tag-count">14</small></label>
+                    <label><input type="checkbox" value="Ruby" data-filter="language" /> Ruby <small class="filter-tag-count">11</small></label>
+                    <label><input type="checkbox" value="TypeScript" data-filter="language" /> TypeScript <small class="filter-tag-count">5</small></label>
+                    <label><input type="checkbox" value="Shell" data-filter="language" /> Shell <small class="filter-tag-count">4</small></label>
+                    <label><input type="checkbox" value="Go" data-filter="language" /> Go <small class="filter-tag-count">3</small></label>
+                    <label><input type="checkbox" value="HTML" data-filter="language" /> HTML <small class="filter-tag-count">3</small></label>
+                    <label><input type="checkbox" value="CSS" data-filter="language" /> CSS <small class="filter-tag-count">3</small></label>
+                    <label><input type="checkbox" value="Lua" data-filter="language" /> Lua <small class="filter-tag-count">1</small></label>
+                    <label><input type="checkbox" value="Vue" data-filter="language" /> Vue <small class="filter-tag-count">1</small></label>
+                  </div>
+                </div>
+              </div>
+            </details>
+            <details class="toolbar-menu" id="menu-stars" name="catalog-filter">
+              <summary><span>GitHub stars</span> <span class="toolbar-menu-value" id="stars-filter-summary">All</span></summary>
+              <div class="toolbar-menu-panel">
+                <div class="filter-group">
+                  <p>Star count</p>
+                  <label><input type="checkbox" value="50k+" data-filter="stars" /> ≥ 50,000 ★ <small class="filter-tag-count">9</small></label>
+                  <label><input type="checkbox" value="10k-50k" data-filter="stars" /> 10,000–&lt;50,000 ★ <small class="filter-tag-count">71</small></label>
+                  <label><input type="checkbox" value="5k-10k" data-filter="stars" /> 5,000–&lt;10,000 ★ <small class="filter-tag-count">72</small></label>
+                  <label><input type="checkbox" value="1k-5k" data-filter="stars" /> 1,000–&lt;5,000 ★ <small class="filter-tag-count">405</small></label>
+                  <label><input type="checkbox" value="<1k" data-filter="stars" /> &lt; 1,000 ★ <small class="filter-tag-count">2363</small></label>
+                </div>
+              </div>
+            </details>
+            <details class="toolbar-menu" id="menu-status" name="catalog-filter">
+              <summary><span>Status</span> <span class="toolbar-menu-value" id="status-filter-summary">All</span></summary>
+              <div class="toolbar-menu-panel">
+                <div class="filter-group"><p>Status</p><label><input type="checkbox" value="validated" data-filter="status" /> <span class="status-dot dot-green"></span> <span>Validated</span></label><label><input type="checkbox" value="review" data-filter="status" /> <span class="status-dot dot-amber"></span> <span>Needs review</span></label><label><input type="checkbox" value="queued" data-filter="status" /> <span class="status-dot dot-gray"></span> <span>Queued</span></label></div>
+              </div>
+            </details>
+            <details class="toolbar-menu" id="menu-topic" name="catalog-filter">
+              <summary><span>Type</span> <span class="toolbar-menu-value" id="topic-filter-summary">All</span></summary>
+              <div class="toolbar-menu-panel">
+                <div class="filter-group">
+                  <p>Technology and category</p>
+                  <label><input type="checkbox" value="docker-compose" data-filter="topic" /> Docker / Compose</label>
+                  <label><input type="checkbox" value="self-hosted" data-filter="topic" /> Self-hosted</label>
+                  <label><input type="checkbox" value="ai-app" data-filter="topic" /> <span>AI applications</span></label>
+                  <label><input type="checkbox" value="monitoring" data-filter="topic" /> <span>Monitoring and operations</span></label>
+                  <label><input type="checkbox" value="cms" data-filter="topic" /> <span>CMS</span></label>
+                  <label><input type="checkbox" value="dev-tools" data-filter="topic" /> <span>Developer tools</span></label>
+                  <label><input type="checkbox" value="security" data-filter="topic" /> <span>Security tools</span></label>
+                  <label><input type="checkbox" value="ecommerce" data-filter="topic" /> <span>E-commerce</span></label>
+                </div>
+              </div>
+            </details>
+            <label class="sort-control" for="sort-select">
+              <span class="select-label">Sort</span>
+              <select id="sort-select">
+                <option value="rank">Catalog rank</option>
+                <option value="stars-desc">Stars: high to low</option>
+                <option value="stars-asc">Stars: low to high</option>
+                <option value="name">Application name</option>
+              </select>
+            </label>
+            <span class="toolbar-active-count" aria-live="polite"><span>Selected</span> <b id="filter-count">0</b></span>
+            <button class="clear-filters" id="clear-filters" type="button">Clear</button>
+          </div>
+        </div>
+
+        <div class="quick-filter-bar" id="quick-filter-bar" aria-label="Application quick filters">
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="PHP">PHP <span class="chip-count">1,554</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="Java">Java <span class="chip-count">1,287</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="JavaScript">JavaScript <span class="chip-count">20</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="Python">Python <span class="chip-count">14</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="Ruby">Ruby <span class="chip-count">11</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="TypeScript">TypeScript <span class="chip-count">5</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="language" data-quick-value="Go">Go <span class="chip-count">3</span></button>
+          <button class="quick-chip quick-chip-stars-first" type="button" data-quick-filter="stars" data-quick-value="50k+"><span>★ ≥50k</span> <span class="chip-count">9</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="stars" data-quick-value="10k-50k"><span>★ 10k–<50k</span> <span class="chip-count">71</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="stars" data-quick-value="5k-10k"><span>★ 5k–<10k</span> <span class="chip-count">72</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="stars" data-quick-value="1k-5k"><span>★ 1k–<5k</span> <span class="chip-count">405</span></button>
+          <button class="quick-chip" type="button" data-quick-filter="stars" data-quick-value="<1k"><span>★ <1k</span> <span class="chip-count">2,363</span></button>
+        </div>
+
+        <div class="catalog-layout">
+          <div class="catalog-results">
+            <div class="result-summary"><span id="result-summary">Showing 12 featured targets</span></div>
+            <div class="app-grid" id="app-grid"></div>
+            <button class="load-more" id="load-more" type="button">Load more applications <span>↓</span></button>
+          </div>
+        </div>
+
+        <div class="batch-bar" id="catalog-batch-bar" hidden>
+          <div class="batch-bar-content">
+            <label class="batch-select-all-label">
+              <input type="checkbox" class="card-select-input" id="catalog-select-all" />
+              <span class="card-checkbox"></span>
+              <span id="catalog-select-all-text">Select all visible</span>
+            </label>
+            <div class="batch-divider"></div>
+            <span class="batch-count-badge"><span>Selected</span> <b id="catalog-selected-count">0</b> <span>items</span></span>
+            <div class="batch-actions">
+              <div class="export-dropdown-wrapper">
+                <button class="button button-primary batch-btn" id="catalog-export-btn" type="button">
+                  <span aria-hidden="true">↓</span> <span>Export deployment files</span> <span class="chevron">▾</span>
+                </button>
+                <div class="export-menu" id="catalog-export-menu" hidden>
+                  <button type="button" class="export-menu-item" data-export-format="runbook">
+                    <span class="export-icon">📝</span>
+                    <div><strong>Deployment guide (Markdown)</strong><small>Setup steps for researchers and automated tools</small></div>
+                  </button>
+                  <button type="button" class="export-menu-item" data-export-format="script">
+                    <span class="export-icon">⚡</span>
+                    <div><strong>Deployment script (deploy.sh)</strong><small>Pull images, start containers, and check readiness</small></div>
+                  </button>
+                  <button type="button" class="export-menu-item" data-export-format="json">
+                    <span class="export-icon">{ }</span>
+                    <div><strong>Runtime configuration (JSON)</strong><small>Repositories, images, ports, and credentials</small></div>
+                  </button>
+                  <button type="button" class="export-menu-item" data-export-format="csv">
+                    <span class="export-icon">📊</span>
+                    <div><strong>Deployment details (CSV)</strong><small>Images, ports, and administrator credentials</small></div>
+                  </button>
+                </div>
+              </div>
+              <button class="button button-quiet batch-btn" id="catalog-clear-selection" type="button">Clear</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="detail-drawer" id="detail-drawer" aria-hidden="true">
+        <div class="drawer-backdrop" data-close-drawer></div>
+        <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+          <button class="drawer-close" type="button" aria-label="Close details" data-close-drawer>×</button>
+          <p class="kicker" id="drawer-kicker">PROJECT DETAIL</p>
+          <div class="drawer-title-row"><h2 id="drawer-title">Application</h2><span class="status-pill" id="drawer-status">queued</span></div>
+          <p class="drawer-description" id="drawer-description"></p>
+          <div class="drawer-facts" id="drawer-facts"></div>
+          <!-- Quick Run / Docker Run Command Box -->
+          <div class="drawer-deploy-block">
+            <div class="drawer-deploy-header">
+              <span class="card-kicker">Docker Launch Command</span>
+              <button class="button-copy-cmd" id="copy-deploy-cmd" type="button">Copy Command <span>⧉</span></button>
+            </div>
+            <div class="drawer-cmd-box">
+              <pre id="drawer-deploy-cmd-text"><code></code></pre>
+            </div>
+            <div class="drawer-deploy-meta">
+              <div class="drawer-meta-pill">
+                <span class="meta-label">Entrypoint</span>
+                <span class="meta-val" id="drawer-deploy-url">http://localhost:5230</span>
+              </div>
+              <div class="drawer-meta-pill">
+                <span class="meta-label">Default Credentials</span>
+                <span class="meta-val" id="drawer-deploy-auth">admin / AdminPassword123!</span>
+              </div>
+            </div>
+          </div>
+
+          <details class="drawer-json-details">
+            <summary class="card-kicker">ENVIRONMENT DETAILS (JSON METADATA)</summary>
+            <div class="drawer-block"><pre id="drawer-brief"></pre></div>
+          </details>
+
+          <div class="drawer-actions">
+            <button class="button button-primary" id="drawer-copy-cmd-primary" type="button">Copy Launch Command <span>⧉</span></button>
+            <a class="button button-quiet" id="drawer-repo" href="#" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+          </div>
+          <p class="drawer-footnote">Review the application version and deployment instructions before testing.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../data/crafterhub-data.js?v=a4b21edb624f"></script>
+    <script src="../data/benchmark-data.js?v=259abdf1a1df"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

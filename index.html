@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WebAxis: Application runtime environments and security evaluation tools for web security research." />
+    <title>WebAxis</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#platforms">Skip to core platforms</a>
+
+    <header class="topbar page-width">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>
+          <strong>WebAxis</strong>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="./index.html">Home</a>
+
+        <a class="nav-link" href="./crafter/index.html">WebCrafter</a>
+
+        <!-- WebGym: Coming Soon -->
+        <span class="nav-link nav-link-disabled" aria-disabled="true">
+          <span>WebGym</span>
+          <small class="nav-soon-badge">Coming Soon</small>
+        </span>
+
+        <a class="nav-link" href="./about.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- Ultra-Concise Portal Hero & Dual Platform Launchpad -->
+      <section class="hero portal-hero" id="overview">
+        <div class="page-width">
+          <h1>Web Security Research & <span class="hero-accent">Evaluation Platform</span></h1>
+
+          <section class="platform-grid" id="platforms" aria-label="Research platforms">
+            <article class="platform-card platform-card-crafter" aria-labelledby="platform-crafter-title">
+              <div class="platform-card-head">
+                <div class="platform-identity">
+                  <span class="platform-icon" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m16 5 11 6-11 6-11-6 11-6Z" fill="currentColor" fill-opacity=".08"/>
+                      <path d="m5 16 11 6 11-6M5 21l11 6 11-6"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <h2 class="platform-name" id="platform-crafter-title">WebCrafter</h2>
+                    <p class="platform-kind">Application environments</p>
+                  </div>
+                </div>
+                <span class="platform-status platform-status-ready">
+                  <i aria-hidden="true"></i><span>Ready to use</span>
+                </span>
+              </div>
+              <p class="platform-description">Preconfigured Docker environments for real-world web applications, with dependencies, services, and databases ready for security testing.</p>
+              <div class="platform-details">
+                <div class="platform-scale">
+                  <strong>2,920</strong>
+                  <span>Open-source applications</span>
+                </div>
+                <p class="platform-coverage">Includes <strong>282</strong> applications used in <strong>46</strong> security papers.</p>
+              </div>
+              <a class="platform-link" href="./crafter/index.html">
+                <span>Explore WebCrafter</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+              </a>
+            </article>
+
+            <article class="platform-card platform-card-gym" aria-labelledby="platform-gym-title">
+              <div class="platform-card-head">
+                <div class="platform-identity">
+                  <span class="platform-icon" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 4v5m0 14v5M4 16h5m14 0h5"/>
+                      <circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="4" fill="currentColor" fill-opacity=".08"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <h2 class="platform-name" id="platform-gym-title">WebGym</h2>
+                    <p class="platform-kind">Security tool evaluation</p>
+                  </div>
+                </div>
+                <span class="platform-status">In development</span>
+              </div>
+              <p class="platform-description">Web applications with known vulnerabilities and verifiable PoCs for reproducible evaluation of security tools, including scanners, fuzzers, and AI agents.</p>
+              <div class="platform-details">
+                <p class="platform-detail-label">Key Features</p>
+                <ul class="platform-capabilities">
+                  <li><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="6" rx="1.5"/><rect x="3" y="11" width="14" height="6" rx="1.5"/><path d="M6 6h.01M9 6h5M6 14h.01M9 14h5"/></svg><span>Runtime Environments</span></li>
+                  <li><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="m10 2 6 3v5c0 4-6 7-6 7s-6-3-6-7V5l6-3Z"/></svg><span>Known Vulnerabilities</span></li>
+                  <li><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="14" height="14" rx="3"/><path d="m6.5 10 2.5 2.5 4.5-5"/></svg><span>Verifiable PoCs</span></li>
+                  <li><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16h14M5 12V8m5 4V4m5 8V6"/></svg><span>Reproducible Evaluation</span></li>
+                </ul>
+              </div>
+              <div class="platform-pending">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
+                <span>Coming soon</span>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="./data/crafterhub-data.js?v=a4b21edb624f"></script>
+    <script src="./data/benchmark-data.js?v=259abdf1a1df"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

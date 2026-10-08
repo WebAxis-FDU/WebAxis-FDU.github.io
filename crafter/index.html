@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WebCrafter: A platform of runtime environments, versions, and reproducibility material for real-world web applications." />
+    <title>WebCrafter · Web Application Runtime Environment Repository</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="alternate icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#overview">Skip to overview</a>
+
+    <header class="topbar page-width">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>
+          <strong>WebAxis</strong>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="../index.html">Home</a>
+
+        <a class="nav-link active" href="./index.html">WebCrafter</a>
+
+        <!-- WebGym Nav Link -->
+        <span class="nav-link nav-link-disabled" aria-disabled="true">
+          <span>WebGym</span>
+          <small class="nav-soon-badge">Coming Soon</small>
+        </span>
+
+        <a class="nav-link" href="../about.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="overview">
+        <div class="page-width">
+          <h1>Ready-to-Use Web Application <span class="hero-accent">Runtime Environments</span></h1>
+          <p class="hero-lead">Delivering ready-to-run real web application environments via Docker images—eliminating tedious setup and environment bitrot.</p>
+          <div class="hero-context" aria-label="Platform background and value">
+            <p><strong>Build Once, Reuse Anywhere.</strong> WebCrafter packages application versions and dependencies into standardized runtime environments that can be reused across experiments and deployment settings. This reduces repeated setup and the impact of environment bitrot, giving researchers and automated tools consistent targets for reproducible evaluation.</p>
+            <p><strong>Large Scale, Broad Coverage.</strong> WebCrafter brings together 2,920 full-stack open-source web applications, including 282 applications used in 46 research papers published at leading security conferences such as USENIX Security, IEEE S&amp;P, ACM CCS, and NDSS. The collection spans diverse languages, application types, and software versions.</p>
+            <p><strong>Ready to Run, Ready to Test.</strong> WebCrafter provides Docker environments with preconfigured service orchestration, packaged dependencies, and initialized databases. Researchers can launch the services and run authenticated tests with minimal configuration, spending less time on setup and more on evaluation.</p>
+          </div>
+          <div class="hero-actions" aria-label="Quick links">
+            <a class="hero-action hero-action-primary" href="#scope">Explore Environments <span aria-hidden="true">→</span></a>
+            <a class="hero-action hero-action-secondary" href="#workflow">How to Use <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scope-section" id="scope" aria-labelledby="scope-heading-title">
+        <div class="page-width">
+          <div class="scope-heading">
+            <p class="kicker">EXPLORE RUNTIMES</p>
+            <h2 id="scope-heading-title">Web Application Runtime Environments</h2>
+            <p class="section-intro">Browse the full application catalog or explore environments used in published security research.</p>
+          </div>
+          <div class="scope-grid" aria-label="Environment catalogs">
+            <a class="scope-card scope-a" href="./catalog.html">
+              <h2 class="scope-card-title">Open-Source Applications</h2>
+              <p class="scope-description">Browse web applications with at least 100 GitHub stars across PHP, Java, Python, Node.js, Go, and more. Review each project's technology stack and runtime information to select suitable environments for security evaluation.</p>
+              <div class="scope-facts" aria-label="Application catalog statistics">
+                <span><strong class="stat-num">2,920</strong><small>applications</small></span>
+                <span><strong class="stat-num">≥100</strong><small>GitHub stars</small></span>
+                <span><strong class="stat-num">15+</strong><small>languages</small></span>
+              </div>
+              <b class="scope-action">Browse applications <i aria-hidden="true">→</i></b>
+            </a>
+            <a class="scope-card scope-b" href="./benchmarks.html">
+              <h2 class="scope-card-title">Research Datasets</h2>
+              <p class="scope-description">Explore applications evaluated in papers published at USENIX Security, IEEE S&P, ACM CCS, and NDSS. Browse this subset of the catalog by paper and application version to support experiment reproduction.</p>
+              <div class="scope-facts" aria-label="Research dataset statistics">
+                <span><strong class="stat-num">46</strong><small>Top Papers</small></span>
+                <span><strong class="stat-num">282</strong><small>Research Apps</small></span>
+                <span><strong class="stat-num">468</strong><small>Fixed Versions</small></span>
+              </div>
+              <b class="scope-action">Browse datasets <i aria-hidden="true">→</i></b>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="page-width">
+          <div class="workflow-heading">
+            <p class="kicker">GET STARTED</p>
+            <h2 id="workflow-title">How to Use</h2>
+          </div>
+
+          <div class="workflow-grid">
+            <div class="workflow-video-container">
+              <video class="workflow-video" autoplay loop muted playsinline controls poster="../assets/crafter-workflow-demo-poster.jpg" preload="metadata">
+                <source src="../assets/crafter-workflow-demo.mp4" type="video/mp4" />
+                <source src="../assets/crafter-workflow-demo.webm" type="video/webm" />
+              </video>
+            </div>
+
+            <ol class="workflow-steps" aria-label="How to use WebCrafter">
+              <li class="workflow-step">
+                <span class="workflow-step-index">01</span>
+                <div class="workflow-step-copy">
+                  <h3>Browse Applications</h3>
+                  <p>Browse Open-Source Applications for real-world targets, or explore Research Datasets for applications used in published security research.</p>
+                </div>
+                <div class="workflow-step-actions" aria-label="Environment links">
+                  <a href="./catalog.html">Open-Source Applications <span aria-hidden="true">→</span></a>
+                  <a href="./benchmarks.html">Research Datasets <span aria-hidden="true">→</span></a>
+                </div>
+              </li>
+              <li class="workflow-step">
+                <span class="workflow-step-index">02</span>
+                <div class="workflow-step-copy">
+                  <h3>Select an Environment</h3>
+                  <p>Search by application name, paper, conference, or year. Review the source repository and application version to find an environment that fits your experiment.</p>
+                </div>
+                <span class="workflow-step-note">Search · source · version</span>
+              </li>
+              <li class="workflow-step">
+                <span class="workflow-step-index">03</span>
+                <div class="workflow-step-copy">
+                  <h3>Deploy and Test</h3>
+                  <p>Open an entry marked Environment ready, then follow the Docker instructions to deploy and test the application.</p>
+                </div>
+                <span class="workflow-step-note ready-note"><i aria-hidden="true"></i><span>Environment ready</span></span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

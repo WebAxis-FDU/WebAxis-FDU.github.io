@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="How to use WebCrafter: browse applications, select an environment, and deploy it with Docker." />
+    <title>How to Use · WebCrafter</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="alternate icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#workflow">Skip to how-to guide</a>
+
+    <header class="topbar page-width">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>WebAxis</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="./index.html">Overview</a>
+
+        <a class="nav-link active" href="./index.html">WebCrafter</a>
+
+        <!-- WebGym Nav Link -->
+        <span class="nav-link nav-link-disabled" aria-disabled="true">
+          <span>WebGym</span>
+          <small class="nav-soon-badge">Coming Soon</small>
+        </span>
+
+        <a class="nav-link" href="../about.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="subpage-hero page-width">
+        <a class="back-link" href="./index.html">← WebCrafter</a>
+        <p class="eyebrow">HOW TO USE WEBCRAFTER</p>
+        <h1>How to Use WebCrafter</h1>
+        <p class="hero-lead">Choose a research entry point, locate a target, and open a prepared environment in three steps.</p>
+      </section>
+
+      <section class="section workflow-section page-width" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-heading">
+          <p class="kicker">GET STARTED</p>
+          <h2 id="workflow-title">How to Use</h2>
+        </div>
+
+        <div class="workflow-grid">
+          <div class="workflow-video-container">
+            <video class="workflow-video" autoplay loop muted playsinline controls poster="../assets/crafter-workflow-demo-poster.jpg" preload="metadata">
+              <source src="../assets/crafter-workflow-demo.mp4" type="video/mp4" />
+              <source src="../assets/crafter-workflow-demo.webm" type="video/webm" />
+            </video>
+          </div>
+
+          <ol class="workflow-steps" aria-label="How to use WebCrafter">
+            <li class="workflow-step">
+              <span class="workflow-step-index">01</span>
+              <div class="workflow-step-copy">
+                <h3>Browse Applications</h3>
+                <p>Browse Open-Source Applications for real-world targets, or explore Research Datasets for applications used in published security research.</p>
+              </div>
+              <div class="workflow-step-actions" aria-label="Environment links">
+                <a href="./catalog.html">Open-Source Applications <span aria-hidden="true">→</span></a>
+                <a href="./benchmarks.html">Research Datasets <span aria-hidden="true">→</span></a>
+              </div>
+            </li>
+            <li class="workflow-step">
+              <span class="workflow-step-index">02</span>
+              <div class="workflow-step-copy">
+                <h3>Select an Environment</h3>
+                <p>Search by application name, paper, conference, or year. Review the source repository and application version to find an environment that fits your experiment.</p>
+              </div>
+              <span class="workflow-step-note">Search · source · version</span>
+            </li>
+            <li class="workflow-step">
+              <span class="workflow-step-index">03</span>
+              <div class="workflow-step-copy">
+                <h3>Deploy and Test</h3>
+                <p>Open an entry marked Environment ready, then follow the Docker instructions to deploy and test the application.</p>
+              </div>
+              <span class="workflow-step-note ready-note"><i aria-hidden="true"></i><span>Environment ready</span></span>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/app.js"></script>
+  </body>
+</html>

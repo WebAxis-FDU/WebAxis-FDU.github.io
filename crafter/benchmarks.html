@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="WebCrafter Research Datasets: 282 applications and 468 versions used in 46 security research papers." />
+    <title>Research Datasets · WebCrafter</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="alternate icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#paper-benchmarks">Skip to research datasets</a>
+
+    <header class="topbar page-width">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>WebAxis</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="./index.html">Overview</a>
+
+        <a class="nav-link active" href="./index.html">WebCrafter</a>
+
+        <!-- WebGym Nav Link -->
+        <span class="nav-link nav-link-disabled" aria-disabled="true">
+          <span>WebGym</span>
+          <small class="nav-soon-badge">Coming Soon</small>
+        </span>
+
+        <a class="nav-link" href="../about.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section paper-section section-slate catalog-page" id="paper-benchmarks">
+        <div class="page-width">
+          <div class="catalog-section-heading">
+            <div>
+              <p class="kicker">EXPLORE</p>
+              <h1>Browse by Paper</h1>
+            </div>
+          </div>
+
+        <div class="catalog-toolbar">
+          <div class="benchmark-search-wrapper">
+            <label class="search-box" for="benchmark-search">
+              <svg class="search-icon" width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"></circle><line x1="15" y1="15" x2="11.5" y2="11.5"></line></svg>
+              <input id="benchmark-search" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="benchmark-search-results" aria-describedby="benchmark-search-status" placeholder="Search papers or applications" aria-label="Search papers or applications" autocomplete="off" />
+              <button class="benchmark-search-clear" id="benchmark-search-clear" type="button" aria-label="Clear search" hidden>×</button>
+              <kbd class="search-kbd" id="benchmark-search-kbd">⌘K</kbd>
+            </label>
+            <small id="benchmark-search-status" class="visually-hidden" aria-live="polite">Search by paper, application, conference, or year.</small>
+            <div class="benchmark-search-results" id="benchmark-search-results" role="listbox" aria-label="Paper search results" hidden></div>
+          </div>
+
+          <div class="toolbar-actions" aria-label="Paper filters">
+            <details class="toolbar-menu" id="menu-paper-venue" name="benchmark-filter">
+              <summary><span>Conference</span> <span class="toolbar-menu-value" id="paper-venue-summary">All</span></summary>
+              <div class="toolbar-menu-panel">
+                <div class="filter-group">
+                  <p>Security conferences</p>
+                  <label><input type="checkbox" value="USENIX" data-paper-filter="venue" /> USENIX Security <small class="filter-tag-count">20</small></label>
+                  <label><input type="checkbox" value="S&P" data-paper-filter="venue" /> IEEE S&amp;P <small class="filter-tag-count">10</small></label>
+                  <label><input type="checkbox" value="CCS" data-paper-filter="venue" /> ACM CCS <small class="filter-tag-count">11</small></label>
+                  <label><input type="checkbox" value="NDSS" data-paper-filter="venue" /> NDSS <small class="filter-tag-count">5</small></label>
+                </div>
+              </div>
+            </details>
+
+            <details class="toolbar-menu" id="menu-paper-year" name="benchmark-filter">
+              <summary><span>Year</span> <span class="toolbar-menu-value" id="paper-year-summary">All</span></summary>
+              <div class="toolbar-menu-panel">
+                <div class="filter-group">
+                  <p>Publication year</p>
+                  <label><input type="checkbox" value="2025" data-paper-filter="year" /> 2025 <small class="filter-tag-count">8</small></label>
+                  <label><input type="checkbox" value="2024" data-paper-filter="year" /> 2024 <small class="filter-tag-count">10</small></label>
+                  <label><input type="checkbox" value="2023" data-paper-filter="year" /> 2023 <small class="filter-tag-count">10</small></label>
+                  <label><input type="checkbox" value="2022" data-paper-filter="year" /> 2022 <small class="filter-tag-count">2</small></label>
+                  <label><input type="checkbox" value="2021" data-paper-filter="year" /> 2021 <small class="filter-tag-count">6</small></label>
+                  <label><input type="checkbox" value="2016-2020" data-paper-filter="year" /> 2016–2020 <small class="filter-tag-count">10</small></label>
+                </div>
+              </div>
+            </details>
+
+            <details class="toolbar-menu" id="menu-paper-status" name="benchmark-filter">
+              <summary><span>Status</span> <span class="toolbar-menu-value" id="paper-status-summary">All</span></summary>
+              <div class="toolbar-menu-panel">
+                <div class="filter-group">
+                  <p>Environment status</p>
+                  <label><input type="checkbox" value="ready" data-paper-filter="status" /> <span class="status-dot dot-green"></span> <span>Environment ready</span> <small class="filter-tag-count">6 papers</small></label>
+                  <label><input type="checkbox" value="all" data-paper-filter="status" /> <span class="status-dot dot-gray"></span> <span>All papers</span> <small class="filter-tag-count">46 papers</small></label>
+                </div>
+              </div>
+            </details>
+
+            <span class="toolbar-active-count" id="paper-filter-active-count" hidden><span>Filtered</span> <b id="paper-filter-matched-count">46</b> <span>papers</span></span>
+            <button class="clear-filters" id="paper-clear-filters" type="button" hidden>Reset</button>
+          </div>
+        </div>
+
+        <!-- Hot Stacks Quick Filter Bar for Papers -->
+        <div class="quick-filter-bar" id="paper-quick-filter-bar" aria-label="Quick paper filters">
+          <button class="quick-chip" type="button" data-paper-chip="venue:USENIX"><span>USENIX Security</span> <span class="chip-count">20</span></button>
+          <button class="quick-chip" type="button" data-paper-chip="venue:S&amp;P"><span>IEEE S&amp;P</span> <span class="chip-count">10</span></button>
+          <button class="quick-chip" type="button" data-paper-chip="venue:CCS"><span>ACM CCS</span> <span class="chip-count">11</span></button>
+          <button class="quick-chip" type="button" data-paper-chip="venue:NDSS"><span>NDSS</span> <span class="chip-count">5</span></button>
+          <button class="quick-chip" type="button" data-paper-chip="year:2025"><span>2025</span> <span class="chip-count">8</span></button>
+          <button class="quick-chip" type="button" data-paper-chip="year:2024"><span>2024</span> <span class="chip-count">10</span></button>
+          <button class="quick-chip" type="button" data-paper-chip="year:2023"><span>2023</span> <span class="chip-count">10</span></button>
+        </div>
+        <div class="benchmark-context">
+          <div class="benchmark-context-copy">
+            <div class="benchmark-paper-meta">
+              <span class="benchmark-paper-badge" id="benchmark-paper-badge">Black Widow · IEEE S&amp;P 2021</span>
+              <span class="benchmark-paper-tag">Selected paper</span>
+            </div>
+            <h3 class="benchmark-paper-title" id="benchmark-paper-title">Black Widow: Blackbox Data-driven Web Scanning</h3>
+            <p id="benchmark-context" hidden>Black Widow · IEEE S&amp;P 2021</p>
+            <small id="benchmark-focus">Real web-application targets for vulnerability discovery and reproduction, with paper versions aligned to current runtime environments.</small>
+          </div>
+          <span id="benchmark-count">9 targets · 6 environments ready</span>
+        </div>
+        <div class="benchmark-grid" id="benchmark-grid"></div>
+
+        <div class="batch-bar" id="benchmark-batch-bar" hidden>
+          <div class="batch-bar-content">
+            <label class="batch-select-all-label">
+              <input type="checkbox" class="card-select-input" id="benchmark-select-all" />
+              <span class="card-checkbox"></span>
+              <span id="benchmark-select-all-text">Select all in this paper</span>
+            </label>
+            <div class="batch-divider"></div>
+            <span class="batch-count-badge"><span>Selected</span> <b id="benchmark-selected-count">0</b> <span>items</span></span>
+            <div class="batch-actions">
+              <div class="export-dropdown-wrapper">
+                <button class="button button-primary batch-btn" id="benchmark-export-btn" type="button">
+                  <span aria-hidden="true">↓</span> <span>Export deployment files</span> <span class="chevron">▾</span>
+                </button>
+                <div class="export-menu" id="benchmark-export-menu" hidden>
+                  <button type="button" class="export-menu-item" data-benchmark-export="runbook">
+                    <span class="export-icon">📝</span>
+                    <div><strong>Deployment guide (Markdown)</strong><small>Setup steps and application versions by paper</small></div>
+                  </button>
+                  <button type="button" class="export-menu-item" data-benchmark-export="script">
+                    <span class="export-icon">⚡</span>
+                    <div><strong>Deployment script (deploy.sh)</strong><small>Pull images, start containers, and check readiness</small></div>
+                  </button>
+                  <button type="button" class="export-menu-item" data-benchmark-export="json">
+                    <span class="export-icon">{ }</span>
+                    <div><strong>Runtime configuration (JSON)</strong><small>Application versions, images, ports, and credentials</small></div>
+                  </button>
+                  <button type="button" class="export-menu-item" data-benchmark-export="csv">
+                    <span class="export-icon">📊</span>
+                    <div><strong>Deployment details (CSV)</strong><small>Applications, images, ports, and credentials</small></div>
+                  </button>
+                </div>
+              </div>
+              <button class="button button-quiet batch-btn" id="benchmark-clear-selection" type="button">Clear</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../data/crafterhub-data.js?v=a4b21edb624f"></script>
+    <script src="../data/benchmark-data.js?v=259abdf1a1df"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
