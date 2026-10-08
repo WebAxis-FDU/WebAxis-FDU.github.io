@@ -100,11 +100,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .brand { display: inline-flex; align-items: center; justify-self: start; gap: 9px; flex-shrink: 0; }
 .brand strong { display: block; font-size: 0.92rem; font-weight: 750; line-height: 1.15; letter-spacing: -0.015em; }
 .brand small { display: block; margin-top: 3px; color: var(--accent-strong); font-size: 0.65rem; font-weight: 650; letter-spacing: 0.04em; line-height: 1.15; }
-.brand-mark { display: inline-flex; width: 22px; height: 20px; align-items: flex-end; gap: 2px; }
-.brand-mark i { display: block; width: 5px; border-radius: 2px 2px 1px 1px; background: var(--accent); transition: background 200ms ease; }
-.brand-mark i:nth-child(1) { height: 9px; opacity: 0.45; }
-.brand-mark i:nth-child(2) { height: 15px; opacity: 0.75; }
-.brand-mark i:nth-child(3) { height: 20px; }
+/* Align the visible logo with the wordmark's optical center. */
+.brand-mark { display: block; width: 30px; height: 30px; object-fit: contain; flex-shrink: 0; transform: translateY(-1px); }
 .main-nav { display: flex; align-items: center; justify-self: center; gap: 24px; color: var(--ink-soft); font-size: 0.92rem; font-weight: 550; }
 .nav-link {
   position: relative;
@@ -1060,6 +1057,25 @@ h2 { max-width: 680px; margin: 7px 0 0; font-size: 1.95rem; font-weight: 700; le
 .drawer-json-details summary:hover { color: var(--ink-soft); }
 
 main { flex: 1 0 auto; }
+
+/* Shared footer across the public site. */
+.site-footer { flex-shrink: 0; margin-top: 48px; padding-bottom: 8px; }
+.site-footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 20px; border-top: 1px solid var(--line); }
+.site-footer-identity { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; min-width: 0; }
+.site-footer-brand { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-soft); font-size: .9rem; font-weight: 750; line-height: 1.4; letter-spacing: -.015em; }
+.site-footer-brand img { display: block; flex-shrink: 0; width: 24px; height: 24px; object-fit: contain; transform: translateY(-1px); }
+.site-footer-note { margin: 0; color: var(--ink-soft); font-size: .85rem; line-height: 1.6; }
+.site-footer-contact { display: inline-flex; flex-shrink: 0; align-items: center; gap: 8px; min-height: 44px; padding-inline: 4px; color: var(--ink-soft); font-size: .9rem; font-weight: 600; }
+.site-footer-contact svg { flex-shrink: 0; }
+.site-footer-contact:hover { color: var(--accent-strong); }
+.site-footer-contact:hover span { text-decoration: underline; text-underline-offset: 4px; }
+.site-footer-brand:hover { color: var(--accent-strong); }
+@media (max-width: 700px) {
+  .site-footer { margin-top: 32px; }
+  .site-footer-inner { align-items: flex-start; gap: 16px; }
+  .site-footer-identity { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .site-footer-contact { margin-top: -10px; }
+}
 
 .toolbar-menu.has-value summary { color: var(--ink); }
 .app-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }

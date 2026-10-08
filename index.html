@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="WebAxis: Application runtime environments and security evaluation tools for web security research." />
     <title>WebAxis</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/webaxis-icon-192.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png?v=2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png?v=2" />
+    <link rel="shortcut icon" href="./favicon.ico?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&display=swap" rel="stylesheet" />
@@ -19,7 +20,7 @@
 
     <header class="topbar page-width">
       <a class="brand" href="./index.html" aria-label="Home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <img class="brand-mark" src="./assets/icons/webaxis-mark.png?v=2" width="30" height="30" alt="" aria-hidden="true" />
         <span>
           <strong>WebAxis</strong>
         </span>
@@ -29,13 +30,8 @@
 
         <a class="nav-link" href="./crafter/index.html">WebCrafter</a>
 
-        <!-- WebGym: Coming Soon -->
-        <span class="nav-link nav-link-disabled" aria-disabled="true">
-          <span>WebGym</span>
-          <small class="nav-soon-badge">Coming Soon</small>
-        </span>
+        <a class="nav-link" href="./gym/index.html">WebGym</a>
 
-        <a class="nav-link" href="./about.html">Contact Us</a>
       </nav>
     </header>
 
@@ -89,12 +85,12 @@
                   </span>
                   <div>
                     <h2 class="platform-name" id="platform-gym-title">WebGym</h2>
-                    <p class="platform-kind">Security tool evaluation</p>
+                    <p class="platform-kind">Black-box &amp; white-box evaluation</p>
                   </div>
                 </div>
-                <span class="platform-status">In development</span>
+                <span class="platform-status">Black-box available</span>
               </div>
-              <p class="platform-description">Web applications with known vulnerabilities and verifiable PoCs for reproducible evaluation of security tools, including scanners, fuzzers, and AI agents.</p>
+              <p class="platform-description">A benchmark for security tools and AI agents, built on real web applications with known vulnerabilities and verifiable PoCs. Black-box evaluation is available; white-box evaluation is coming soon.</p>
               <div class="platform-details">
                 <p class="platform-detail-label">Key Features</p>
                 <ul class="platform-capabilities">
@@ -104,15 +100,31 @@
                   <li><svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16h14M5 12V8m5 4V4m5 8V6"/></svg><span>Reproducible Evaluation</span></li>
                 </ul>
               </div>
-              <div class="platform-pending">
-                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
-                <span>Coming soon</span>
-              </div>
+              <a class="platform-link" href="./gym/index.html">
+                <span>Explore WebGym</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+              </a>
             </article>
           </section>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner page-width">
+        <div class="site-footer-identity">
+          <a class="site-footer-brand" href="./index.html" aria-label="WebAxis home">
+            <img src="./assets/icons/webaxis-mark.png?v=2" width="24" height="24" alt="" aria-hidden="true" />
+            <span>WebAxis</span>
+          </a>
+          <p class="site-footer-note">Web Security Research &amp; Evaluation</p>
+        </div>
+        <a class="site-footer-contact" href="mailto:youkushi@polyu.edu.hk">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+          <span>Contact us</span>
+        </a>
+      </div>
+    </footer>
 
 
     <script src="./data/crafterhub-data.js?v=a4b21edb624f"></script>

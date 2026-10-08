@@ -1,0 +1,150 @@
+/* WebGym reuses the shared WebCrafter typography, hero, navigation, cards,
+   buttons, and workflow layout. Only benchmark-specific components live here. */
+.gym-page section[id] { scroll-margin-top: 96px; }
+.gym-edition-status { margin-bottom: 16px; }
+.gym-card-actions { display: flex; flex-wrap: wrap; gap: 24px; }
+.gym-page .scope-facts small { white-space: normal; }
+.gym-page .scope-action:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+
+/* Introduction and evaluation modes. */
+.gym-intro { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-start; gap: 28px; min-height: min(960px, calc(100svh - 56px)); padding: clamp(32px, 5svh, 56px) 0 40px; }
+.gym-intro .hero { position: static; padding: 0; }
+.gym-rationale { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; max-width: 1040px; margin: 32px auto 0; text-align: left; }
+.gym-rationale h2 { margin: 0 0 8px; font-size: 1.15rem; font-weight: 750; line-height: 1.4; letter-spacing: 0; color: var(--accent-strong); }
+.gym-rationale > div:last-child h2 { color: #6d28d9; }
+[data-theme="dark"] .gym-rationale > div:last-child h2 { color: #c4b5fd; }
+.gym-rationale p { margin: 0; color: var(--ink-soft); font-size: 1.1rem; line-height: 1.8; }
+.gym-intro .scope-section { position: relative; z-index: 1; margin: 0; padding: 0; }
+.gym-intro .scope-heading { max-width: 1040px; margin-bottom: 22px; }
+.gym-intro .scope-heading h2 { margin-bottom: 8px; font-size: 1.85rem; }
+.gym-intro .scope-heading .section-intro { max-width: 960px; font-size: .95rem; }
+.gym-intro .scope-grid { max-width: 1040px; }
+.gym-intro .scope-card { min-height: 0; padding: 22px 24px; }
+.gym-intro .gym-edition-status { margin-bottom: 10px; }
+.gym-intro .scope-action, .gym-intro .gym-mode-note { margin-top: 16px; }
+
+/* Compare the published collection with WebGym's current expansion. */
+.gym-editions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1040px; margin: 0 auto; }
+.gym-edition { display: flex; flex-direction: column; min-width: 0; padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.gym-edition-current { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: color-mix(in srgb, var(--accent-soft) 35%, var(--surface)); }
+.gym-edition-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.gym-edition-header .kicker { font-size: .7rem; }
+.gym-edition-badge { display: inline-flex; padding: 5px 10px; border: 1px solid var(--line); border-radius: 9999px; color: var(--ink-soft); background: var(--surface); font-size: .72rem; font-weight: 700; }
+.gym-edition-current .gym-edition-badge { border-color: color-mix(in srgb, var(--accent) 30%, var(--line)); color: var(--accent-strong); background: var(--accent-soft); }
+.gym-edition h3 { margin: 20px 0 12px; font-size: 1.5rem; line-height: 1.3; font-weight: 750; letter-spacing: -.02em; }
+.gym-edition-description { margin: 0 0 24px; min-height: 5.4em; color: var(--ink-soft); font-size: .95rem; line-height: 1.8; }
+.gym-edition-metrics { margin: 0; border-top: 1px solid var(--line); }
+.gym-edition-metrics > div { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 66px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.gym-edition-metrics dt { color: var(--ink-soft); font-size: .9rem; }
+.gym-edition-metrics dd { margin: 0; font-size: 1.8rem; line-height: 1.2; font-weight: 750; letter-spacing: -.035em; }
+.gym-edition-current .gym-edition-metrics dd { color: var(--accent-strong); }
+.gym-edition-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; min-height: 44px; margin-top: auto; padding-top: 24px; }
+.gym-edition-actions .hero-action { text-align: center; }
+
+/* Explain the benchmark's methodology and its value for evaluation. */
+.gym-advantages { max-width: 1040px; margin: 52px auto 40px; }
+.gym-advantages-heading { max-width: 780px; margin: 0 auto 28px; text-align: center; }
+.gym-advantages-heading h3 { margin: 10px 0 12px; font-size: 2rem; line-height: 1.3; letter-spacing: -.025em; }
+.gym-advantage-feature { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 32px; padding: 30px; border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line)); border-radius: 20px; background: linear-gradient(115deg, var(--accent-soft), var(--surface)); }
+.gym-advantage-feature h4 { margin: 0 0 12px; font-size: 1.35rem; line-height: 1.4; letter-spacing: -.015em; }
+.gym-advantage-feature p { margin: 0; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.75; }
+.gym-evidence-path { display: grid; grid-template-columns: minmax(0, 1fr) 18px minmax(0, 1fr) 18px minmax(0, 1fr); align-items: center; gap: 6px; }
+.gym-evidence-step { display: flex; flex-direction: column; align-items: center; gap: 12px; min-width: 0; padding: 20px 3px; text-align: center; color: var(--accent-strong); }
+.gym-evidence-step svg { width: 32px; height: 32px; }
+.gym-evidence-step span { color: var(--ink-soft); font-size: .86rem; font-weight: 650; line-height: 1.5; }
+.gym-evidence-arrow { color: var(--accent-strong); font-size: 1rem; }
+.gym-advantage-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+.gym-advantage-card { position: relative; min-width: 0; padding: 26px 28px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.gym-advantage-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; margin-bottom: 16px; border-radius: 12px; background: var(--accent-soft); color: var(--accent-strong); }
+.gym-advantage-icon svg { width: 23px; height: 23px; }
+.gym-advantage-card h4 { margin: 0 0 10px; color: var(--ink); font-size: 1.2rem; font-weight: 750; line-height: 1.4; letter-spacing: -.015em; }
+.gym-advantage-card p { margin: 0; color: var(--ink-soft); font-size: 1.05rem; line-height: 1.75; }
+
+/* Keep the paper's research foundation visible below the benchmark advantages. */
+.gym-research { max-width: 1040px; margin: 28px auto 0; padding: 28px; border: 1px solid var(--line); border-radius: var(--card-radius); background: var(--surface); }
+.gym-research-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px; }
+.gym-paper-badge { display: inline-flex; padding: 4px 11px; border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line)); border-radius: 9999px; background: var(--accent-soft); color: var(--accent-strong); font-size: .85rem; font-weight: 700; white-space: nowrap; }
+.gym-research h3 { margin: 16px 0 10px; max-width: 920px; font-size: 1.25rem; line-height: 1.5; letter-spacing: -.01em; }
+.gym-research > p { margin: 0; color: var(--ink-soft); font-size: .95rem; line-height: 1.8; }
+.gym-research .gym-paper-authors { margin-bottom: 16px; font-size: .9rem; font-weight: 600; line-height: 1.7; }
+.gym-research-actions { display: flex; justify-content: flex-end; margin-top: 16px; }
+.gym-research-actions a { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-strong); font-size: .88rem; font-weight: 700; }
+.gym-research-actions a:hover { text-decoration: underline; }
+
+/* Email contact keeps the shared white-card treatment. */
+.gym-access-layout { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.gym-access-copy h3, .gym-email-card h3 { margin: 0 0 14px; font-size: 1.15rem; letter-spacing: -.015em; }
+.gym-access-copy > p { color: var(--ink-soft); font-size: .95rem; line-height: 1.8; }
+.gym-email-card { padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
+.gym-email-subject { color: var(--ink-soft); font-size: .78rem; line-height: 1.6; }
+.gym-email-fields { display: grid; gap: 18px; padding-left: 22px; margin: 24px 0; }
+.gym-email-fields li { padding-left: 5px; }
+.gym-email-fields li::marker { color: var(--accent-strong); font-family: var(--font-mono); font-size: .75rem; }
+.gym-email-fields strong { display: block; font-size: .9rem; }
+.gym-email-fields small { display: block; margin-top: 4px; color: var(--ink-soft); font-size: .8rem; line-height: 1.6; }
+.gym-email-address { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0; padding: 16px 12px; border-radius: 12px; background: var(--accent-soft); color: var(--accent-strong); font-size: 1rem; font-weight: 700; }
+.gym-email-address svg { flex-shrink: 0; }
+.gym-email-address span { min-width: 0; overflow-wrap: anywhere; user-select: text; }
+
+@media (max-width: 1000px) {
+  .gym-advantage-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .gym-access-layout { gap: 28px; }
+  .gym-advantage-feature { grid-template-columns: 1fr; gap: 18px; }
+  .gym-evidence-path { max-width: 480px; width: 100%; margin-inline: auto; }
+}
+@media (min-width: 1000px) and (max-height: 800px) {
+  .gym-intro { gap: 16px; padding-block: 24px; }
+  .gym-intro h1 { margin-bottom: 12px; font-size: 2.5rem; }
+  .gym-intro .hero-lead { font-size: 1.1rem; line-height: 1.6; }
+  .gym-rationale { margin-top: 24px; }
+  .gym-intro .scope-heading { margin-bottom: 18px; }
+  .gym-intro .scope-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto 1fr auto; column-gap: 12px; padding-block: 18px; }
+  .gym-intro .scope-card-title { grid-area: 1 / 1; align-self: center; font-size: 1.4rem; }
+  .gym-intro .gym-edition-status { grid-area: 1 / 2; align-self: center; margin: 0; }
+  .gym-intro .scope-description { grid-area: 2 / 1 / auto / span 2; }
+  .gym-intro .scope-action, .gym-intro .gym-mode-note { grid-area: 3 / 1 / auto / span 2; align-self: end; margin-top: 14px; }
+}
+@media (max-width: 700px) {
+  .gym-intro { min-height: auto; gap: 28px; padding: 36px 0 44px; }
+  .gym-intro .scope-heading { margin-bottom: 20px; }
+  .gym-intro .scope-heading h2 { font-size: 1.6rem; }
+  .gym-intro .scope-heading .section-intro { font-size: .9rem; }
+  .gym-intro .scope-grid { gap: 16px; margin-top: 0; }
+  .gym-intro .scope-card { padding: 22px 20px; }
+  .gym-rationale { gap: 24px; margin-top: 24px; }
+  .gym-rationale p { font-size: 1.05rem; }
+  .gym-advantages { margin: 36px auto 28px; }
+  .gym-advantages-heading h3 { font-size: 1.65rem; }
+  .gym-advantage-feature, .gym-advantage-card { padding: 24px 20px; }
+  .gym-advantage-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 14px; }
+  .gym-evidence-path { grid-template-columns: 1fr; gap: 0; }
+  .gym-evidence-step { flex-direction: row; justify-content: flex-start; gap: 16px; padding: 12px 8px; text-align: left; }
+  .gym-evidence-step span { font-size: .95rem; }
+  .gym-evidence-step br { display: none; }
+  .gym-evidence-arrow { width: 48px; text-align: center; font-size: 0; }
+  .gym-evidence-arrow::before { content: "↓"; font-size: 1rem; }
+  .gym-page .scope-facts strong.stat-num { font-size: 1.45rem; }
+  .gym-page .scope-facts small { font-size: .72rem; }
+  .gym-access-layout { grid-template-columns: 1fr; gap: 28px; }
+  .gym-research, .gym-email-card, .gym-edition { padding: 24px 20px; }
+  .gym-editions { grid-template-columns: 1fr; }
+  .gym-edition-description { min-height: 0; }
+  .gym-edition-metrics dt { font-size: .82rem; }
+  .gym-edition-metrics dd { font-size: 1.65rem; }
+  .gym-edition-actions .hero-action { width: 100%; justify-content: center; padding-inline: 14px; }
+  .gym-research h3 { font-size: 1.12rem; }
+  .gym-card-actions { gap: 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Keep version-specific public release data separate from the introduction. */
+.gym-baseline-links { display: flex; flex-wrap: wrap; gap: 24px; }
+.gym-baseline-links a { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-strong); font-size: .86rem; font-weight: 650; }
+.gym-baseline-links a:hover { text-decoration: underline; }
+
+.gym-mode-note { margin: 22px 0 0; color: var(--card-accent); font-size: .92rem; font-weight: 700; line-height: 1.7; }
+.gym-page article[id] { scroll-margin-top: 96px; }
