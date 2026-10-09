@@ -32,7 +32,7 @@
     },
     "portal": {
       "pageTitle": "WebAxis",
-      "metaDescription": "WebAxis: Application runtime environments and security evaluation tools for web security research.",
+      "metaDescription": "WebAxis: Advancing Web Security Research and Practice. Tools, datasets, and runtime environments for web security research.",
       "skipLink": "Skip to core platforms",
       "homeAria": "WebAxis Home",
       "brandTitle": "WebAxis",
@@ -43,7 +43,7 @@
       "navAbout": "Contact Us",
       "navContact": "Contact Us",
       "heroBadge": "Fudan University SecSys Lab",
-      "heroTitle": "Web Security Research & <span class=\"hero-accent\">Evaluation Platform</span>",
+      "heroTitle": "Advancing Web Security <span class=\"hero-accent\">Research and Practice</span>",
       "contextOne": "<strong>Bitrot Elimination & Reproducibility.</strong> Systematically pinning and reproducing experimental environments from 46 web security papers across the Big Four security conferences (IEEE S&amp;P, USENIX Security, ACM CCS, NDSS, 2016–2025), preserving databases and dependencies for verifiable academic research.",
       "contextTwo": "<strong>Comprehensive Multi-Stack Coverage.</strong> Curating 2,920 real-world open-source web applications (GitHub Stars ≥ 100) across PHP, Java, Python, Node.js, Go, and Ruby, serving as large-scale empirical testbeds for security analyzers, fuzzers, and verification tools.",
       "contextThree": "<strong>Turn-Key Dual Ecosystem.</strong> Powered by real-world application runtime repositories (WebCrafter) and dynamic attack/defense evaluation testbeds (WebGym), delivered via 100% standardized Docker containers for automated tooling and LLM security agents.",

@@ -1,4 +1,12 @@
-# WebAxis icon
+# WebAxis brand assets
+
+## Official slogan
+
+**Advancing Web Security Research and Practice**
+
+Use this exact wording and capitalization for the platform slogan across the website and future brand materials. Keep "and" spelled out. Visual line breaks are allowed as long as the wording stays the same.
+
+## Icon
 
 Generated with the built-in imagegen tool on 2026-10-08.
 
